@@ -1,0 +1,112 @@
+
+.calendar-container {
+  width: fit-content;
+  margin: 20px;
+  height: 100vmax;
+  position:relative;
+  border: 1px solid #d5d6d7c5;
+  border-bottom: none;
+  border-radius: 10px;
+  background-color: #ffff;
+  box-shadow: 0px 2px 2px 0px #b6b6b6;
+}
+
+.calendar-board {
+  display: flex;
+  align-items:center;
+  position:absolute;
+}
+.calendar-board > div {
+  text-align: center;
+  padding: 60px;
+  border-right: 1px solid #d5d6d7c5;
+  height: 100vw;
+}
+
+.calendar-board > div:hover{
+  border-left: 1px solid red;
+}
+
+
+.calendar-header-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.calendar-header {
+  padding: 30px;
+  border-right:1px solid #d5d6d7c5;
+  border-bottom:1px solid #d5d6d7c5;
+  width: 60px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.calendar-header-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header .calendar-header-day small {
+  font-size: 12px;
+  color: #848484;
+}
+.calendar-header .calendar-header-day span:first-child {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+.calendar-header .calendar-header-day span:last-child {
+  font-size: 26px;
+
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  line-height: 46px;
+  color: #848484;
+}
+
+.calendar-header .calendar-header-day:last-child{
+  border-top-right-radius: 10px;
+}
+
+.calendar-header .calendar-header-day .today{
+  background-color: skyblue;
+  border-radius: 50px;
+  width: 50px;
+  height: 48px;
+  text-align: center;
+}
+
+.events-container {
+  display: flex;
+  position:relative;
+  top: 10px;
+}
+
+.event {
+  padding: 4px;
+  height: 30px;
+  display:flex;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  border-right: 2px solid #5a5a5a;
+  border-left: 2px solid #5a5a5a;
+  color: #fff;
+  box-shadow: 0px 2px 5px 0px #b6b6b6;
+  font-size: 14px;
+  background-color: #8ab7ff;
+}
+
+.event:hover{
+  z-index: 1000;
+  cursor: pointer;
+}

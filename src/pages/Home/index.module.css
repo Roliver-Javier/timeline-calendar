@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding: 70px;
+    padding-top: 20px;
+}
